@@ -44,7 +44,7 @@ describe App do
   describe 'GET /say/:number/:phrase' do
     it 'sends a 200 status code' do
       get '/say/3/show%20me%20the%20money'
-
+      # binding.pry
       expect(last_response.status).to eq(200)
     end
 
